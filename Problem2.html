@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Session</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .center_div {
+            height: fit-content;
+            width: 300px;
+            background-color: whitesmoke;
+            padding: 50px;
+        }
+
+        .bar_section {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .bar {
+            height: 300px;
+            width: 30px;
+            background-color: white;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .bar_bg {
+            background-color: lightgray;
+            width: 100%;
+        }
+
+        #bar_1 {
+            height: 30%;
+            animation: bar_1_animation 5s;
+        }
+
+        @keyframes bar_1_animation {
+            from {
+                height: 0;
+            }
+
+            to {
+                height: 30%;
+            }
+        }
+
+        #bar_2 {
+            height: 40%;
+            animation: bar_2_animation 5s;
+        }
+
+        @keyframes bar_2_animation {
+            from {
+                height: 0;
+            }
+
+            to {
+                height: 40%;
+            }
+        }
+
+        #bar_3 {
+            height: 80%;
+            animation: bar_3_animation 5s;
+        }
+
+        @keyframes bar_3_animation {
+            from {
+                height: 0;
+            }
+
+            to {
+                height: 80%;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center_div">
+        <div class="bar_section">
+            <div class="bar_div">
+                <div class="bar">
+                    <div id="bar_1" class="bar_bg"></div>
+                </div>
+                <p>30%</p>
+            </div>
+            <div class="bar_div">
+                <div class="bar">
+                    <div id="bar_2" class="bar_bg"></div>
+                </div>
+                <p>40%</p>
+            </div>
+            <div class="bar_div">
+                <div class="bar">
+                    <div id="bar_3" class="bar_bg"></div>
+                </div>
+                <p>80%</p>
+            </div>
+        </div>
+        <h1>Bar Plot</h1>
+    </div>
+</body>
+</html>

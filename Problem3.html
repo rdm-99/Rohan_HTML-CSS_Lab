@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: max-content;
+            height: 100%;
+        }
+
+        .center_div {
+            width: 400px;
+            border: 2px solid rgba(255, 255, 255, .5);
+            border-radius: 5px;
+        }
+
+        form>p {
+            color: black;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+
+        form>input {
+            display: block;
+            margin: 16px 50px;
+            width: 300px;
+            height: 30px;
+            padding-left: 10px;
+        }
+
+        form>input:focus {
+            background-color: rgba(70, 130, 180, .35);
+            padding-left: 10px;
+            color: white;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid steelblue;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+
+        form>button {
+            display: inline;
+            margin: 16px 50px;
+            margin-right: 0px;
+            padding: 5px 20px;
+            background-color: fuchsia;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+       
+        #Background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    
+    <video autoplay muted loop id="Background">
+        <source src="Background.mp4" type="video/mp4">
+    </video>
+    <div class="center_div">
+        <form action="">
+            <p>Create Gmail Account</p>
+            <input type="text" placeholder="Full Name">
+            <input type="number" name="" id="" min="6000000000" max="10000000000" placeholder="Contact Number">
+            <input type="email" name="Email Id" id="email_id" placeholder="Email Id">
+            <button>Reset</button>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
